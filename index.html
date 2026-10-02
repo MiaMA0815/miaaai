@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quip</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="mark">Q</span><div><b>Quip</b><small data-i18n="tagline"></small></div></div>
+    <button class="new-chat" id="newChat" data-i18n="newChat"></button>
+    <nav class="chat-list" id="chatList"></nav>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn menu" id="menuBtn" aria-label="Menu">☰</button>
+      <h1 id="title"></h1>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="zh">中文</button><button data-lang="en">EN</button><button data-lang="ja">日本語</button>
+      </div>
+    </header>
+    <section class="messages" id="messages" aria-live="polite"></section>
+    <footer class="composer">
+      <div class="box">
+        <textarea id="input" rows="1"></textarea>
+        <button id="send" class="send"></button>
+      </div>
+    </footer>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
